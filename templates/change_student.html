@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title> Change student </title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/paragraph.css') }}">
+   </head>
+   <body>
+       {% extends "template.html" %}
+       {% block content %}
+      <form method="POST" action="">
+         <center>
+            <H1> Change student record </H1>
+            <br>
+            Id <input type = "number" name = "id" /> <br>
+            First Name <input type = "text" name= "first_name" /> <br>
+            Last Name <input type = "text" name = "last_name" /> <br>
+            Age <input type = "text" name = "age" /> <br>
+            <input id="alter" type = "submit" value="Change student record">
+            <input id="delete" type = "submit" value="Delete student record">
+         </center>
+      </form>
+       {% endblock %}
+   </body>
+</html>

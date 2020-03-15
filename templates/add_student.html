@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title> Add student </title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/paragraph.css') }}">
+   </head>
+   <body>
+       {% extends "template.html" %}
+       {% block content %}
+      <form method="POST" action="">
+         <center>
+            <H1> Add a new student record </H1>
+            <br>
+            First Name <input type = "text" name= "first_name" /> <br>
+            Last Name <input type = "text" name = "last_name" /> <br>
+            Age <input type = "text" name = "age" /> <br>
+            <input type = "submit">
+         </center>
+      </form>
+       {% endblock %}
+   </body>
+</html>
